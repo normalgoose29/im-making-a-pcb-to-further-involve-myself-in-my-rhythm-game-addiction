@@ -20,7 +20,7 @@ U 1 1 6313D682
 P 5850 4250
 F 0 "U1" H 5850 2361 50  0000 C CNN
 F 1 "ATmega32U4-AU" H 5850 2270 50  0000 C CNN
-F 2 "random-keyboard-parts:SKQG-1155865" H 5850 4250 50  0001 C CIN
+F 2 "Package_QFP:TQFP-44-1EP_10x10mm_P0.8mm_EP4.5x4.5mm" H 5850 4250 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 5850 4250 50  0001 C CNN
 	1    5850 4250
 	1    0    0    -1  
@@ -248,7 +248,7 @@ F 3 "" H 4650 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 3150 4650 3150
+	5100 3050 4750 3050
 Wire Wire Line
 	5250 2950 4650 2950
 $Comp
@@ -257,7 +257,7 @@ U 1 1 631407F4
 P 4650 3050
 F 0 "Y1" V 4604 3194 50  0000 L CNN
 F 1 "Crystal_GND24_Small" V 4695 3194 50  0000 L CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 4650 3050 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4650 3050 50  0001 C CNN
 F 3 "~" H 4650 3050 50  0001 C CNN
 	1    4650 3050
 	0    1    1    0   
@@ -303,7 +303,6 @@ Wire Wire Line
 	4350 3250 4350 3150
 Wire Wire Line
 	4350 3150 4650 3150
-Connection ~ 4650 3150
 Wire Wire Line
 	4550 3400 4150 3400
 Wire Wire Line
@@ -575,4 +574,10 @@ Text GLabel 8950 4250 1    50   Input ~ 0
 COL0
 Text GLabel 9500 4250 1    50   Input ~ 0
 COL1
+Connection ~ 4550 3050
+Wire Wire Line
+	4550 3050 4500 3050
+Connection ~ 4750 3050
+Wire Wire Line
+	4750 3050 4550 3050
 $EndSCHEMATC
